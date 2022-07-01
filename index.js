@@ -16,7 +16,7 @@ app.use("/posts", postRoutes);
 app.use("/user", userRouter);
 
 const CONNECTION_URL =
-  "mongodb://localhost:27017/memo?readPreference=primary&appname=MongoDB%20Compass&directConnection=true&ssl=false";
+  "mongodb+srv://rohan:tX7sC6i8mS2m8bMM@cluster0.dynhtam.mongodb.net/blogDb?retryWrites=true&w=majority";
 const PORT = process.env.PORT || 5000;
 
 mongoose
@@ -29,3 +29,5 @@ mongoose
   .catch((error) => console.log(`${error} did not connect`));
 
 mongoose.set("useFindAndModify", false);
+
+//tX7sC6i8mS2m8bMM
