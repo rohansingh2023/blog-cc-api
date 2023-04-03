@@ -16,7 +16,7 @@ app.use("/posts", postRoutes);
 app.use("/user", userRouter);
 
 const CONNECTION_URL =
-  "mongodb+srv://rohan:tX7sC6i8mS2m8bMM@cluster0.dynhtam.mongodb.net/blogDb?retryWrites=true&w=majority";
+  "mongodb+srv://rohan:jhHhTuDPNp5o4avf@cluster0.ilfgxpf.mongodb.net/?retryWrites=true&w=majority";
 const PORT = process.env.PORT || 5000;
 
 mongoose
@@ -30,4 +30,4 @@ mongoose
 
 mongoose.set("useFindAndModify", false);
 
-//tX7sC6i8mS2m8bMM
+//jhHhTuDPNp5o4avf
